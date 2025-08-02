@@ -110,6 +110,42 @@ def socialissues_youthempower_html():
 def socialissues_socialawarness_html():
     return render_template('Socialissues/socialawarness.html')
 
+# Route for festivals.html
+@app.route('/festivals.html')
+def festivals_html():
+    return render_template('festivals.html')
+
+# Route for Festivals/dashain.html
+@app.route('/Festivals/dashain.html')
+def festivals_dashain_html():
+    return render_template('Festivals/dashain.html')
+
+# Route for Festivals/holi.html
+@app.route('/Festivals/holi.html')
+def festivals_holi_html():
+    return render_template('Festivals/holi.html')
+
+# Route for Festivals/maghi.html
+@app.route('/Festivals/maghi.html')
+def festivals_maghi_html():
+    return render_template('Festivals/maghi.html')
+
+# Route for community.html
+@app.route('/community.html')
+def community_html():
+    return render_template('community.html')
+
+# Route for Community/village-life.html
+@app.route('/Community/village-life.html')
+def community_village_life_html():
+    return render_template('Community/village-life.html')
+
+# Route for Community/joint-family.html
+@app.route('/Community/joint-family.html')
+def community_joint_family_html():
+    return render_template('Community/joint-family.html')
+
+
 if __name__ == '__main__':
     if not os.path.exists('site.db'):
         with app.app_context():

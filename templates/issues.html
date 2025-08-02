@@ -1,0 +1,59 @@
+
+{% include 'header.html' %}
+
+<div class="container">
+  <h1 class="my-4 text-center fw-bold">Social Issues and Movements</h1>
+  <div class="row g-4 justify-content-center px-5">
+
+    <!-- Card 1 -->
+    <div class="col-sm-6 col-lg-4">
+      <a href="Socialissues/gender.html" class="text-decoration-none text-dark">
+        <div class="card h-100" style="width: 18rem;">
+          <img src="{{ url_for('static', filename='images/Social issues/img1.jpg') }}" class="card-img-top" alt="Gender Equality">
+          <div class="card-body">
+            <h5 class="card-title">Gender Equality</h5>
+            <p class="card-text text-truncate-multiline">
+              Youth in Sudurpaschim are raising their voices against gender discrimination, promoting equal rights and opportunities for all genders.
+            </p>
+            <div class="text-primary fw-semibold">Learn More</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-sm-6 col-lg-4">
+      <a href="Socialissues/youthempower.html" class="text-decoration-none text-dark">
+        <div class="card h-100" style="width: 18rem;">
+          <img src="{{ url_for('static', filename='images/Social issues/img3.jpg') }}" class="card-img-top" alt="Youth Empowerment">
+          <div class="card-body">
+            <h5 class="card-title">Youth Empowerment</h5>
+            <p class="card-text text-truncate-multiline">
+              Social movements led by youth focus on leadership, employment, and skill development to build a more active and responsible generation.
+            </p>
+            <div class="text-primary fw-semibold">Learn More</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-sm-6 col-lg-4">
+      <a href="Socialissues/socialawarness.html" class="text-decoration-none text-dark">
+        <div class="card h-100" style="width: 18rem;">
+          <img src="{{ url_for('static', filename='images/Social issues/img2.jpg') }}" class="card-img-top" alt="Social Awareness">
+          <div class="card-body">
+            <h5 class="card-title">Social Awareness</h5>
+            <p class="card-text text-truncate-multiline">
+              Movements related to health, caste discrimination, domestic violence, and environmental protection are gaining momentum among youth.
+            </p>
+            <div class="text-primary fw-semibold">Learn More</div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+{% include 'footer.html' %}

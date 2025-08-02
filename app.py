@@ -145,6 +145,11 @@ def community_village_life_html():
 def community_joint_family_html():
     return render_template('Community/joint-family.html')
 
+# Route for Community/ethnic-harmony.html
+@app.route('/Community/ethnic-harmony.html')
+def community_ethnic_harmony_html():
+    return render_template('Community/ethnic-harmony.html')
+
 
 if __name__ == '__main__':
     if not os.path.exists('site.db'):

@@ -1,17 +1,24 @@
+<!-- common-header.html: Contains the common navbar/header for Community pages -->
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-      <img src="/static/images/nepal.png" alt="Logo" width="50" height="50" class="rounded-circle">
+      <img src="{{ url_for('static', filename='images/logo2-removebg-preview.png') }}" alt="Logo" width="50" height="50" class="rounded-circle">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link nav-large" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link nav-large" href="#about">About</a></li>
+        <li class="nav-item">
+          <a class="nav-link nav-large" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-large" href="/index#about">About</a>
+        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle nav-large" href="#" role="button" data-bs-toggle="dropdown">Others</a>
+          <a class="nav-link dropdown-toggle nav-large" href="#" role="button" data-bs-toggle="dropdown">
+            Others
+          </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/culture">Culture</a></li>
             <li><a class="dropdown-item" href="/youth">Youth</a></li>
@@ -20,7 +27,9 @@
             <li><a class="dropdown-item" href="/community">Community</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link nav-large" href="/feedback">Feedback</a></li>
+        <li class="nav-item">
+          <a class="nav-link nav-large" href="/feedback">Feedback</a>
+        </li>
       </ul>
     </div>
   </div>
